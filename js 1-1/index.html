@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       main{
+           display: flex;
+           justify-content: space-between;
+       }
+       .left{
+           display: flex;
+           flex-direction: column;
+           border-right: 1px solid black;
+           width: 50%;
+           height: 50vh;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <input type="text" id="name" placeholder="Имя">
+            <input type="number" id="phone" placeholder="Номер телефона">
+            <input type="email" name="" id="mail" placeholder="почта">
+            <label for="">
+                <span>Мужчина</span>
+                <input type="radio" name="pol" id="polm" value="Мужчина" class="pol">
+            </label>
+            <label for="">
+                <span>Женщина</span>
+                <input type="radio" name="pol" id="polw" value="Женщина" class="pol">
+            </label>
+            <button id="regButton">Зарегистрироваться</button>
+        </div>
+        <div class="right">
+           <div class="header">
+               <input type="search" name="" id="" placeholder="Поиск">
+               <select name="sort" id="">
+                   <option value="all" selected>Все</option>
+                   <option value="name">По имени</option>
+                   <option value="pol">По полу</option>
+               </select>
+               <button id="searchButton">Найти</button>
+           </div>
+           <div class="content">
+
+           </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <h1>ИМЯ: ${JSON.parse($inputs[0]).name}</h1> -->
